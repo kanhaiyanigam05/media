@@ -1,6 +1,6 @@
 <?php
 
-namespace Media\Uploader\Http\Controllers;
+namespace Media\Http\Controllers;
 
 use Media\Models\Media;
 use Exception;

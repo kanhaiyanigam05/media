@@ -1,6 +1,6 @@
 <?php
 
-namespace Media\Uploader\Models;
+namespace Media\Models;
 
 use Illuminate\Database\Eloquent\Model;
 

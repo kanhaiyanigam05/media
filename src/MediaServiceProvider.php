@@ -21,5 +21,4 @@ class MediaServiceProvider extends ServiceProvider
             __DIR__ . '/resources/assets' => public_path('media-assets'),
         ], 'media');
     }
-    
 }
