@@ -1,0 +1,28 @@
+{
+    "name": "kanhaiyanigam05/media",
+    "description": "This is a media uploader package, which is able to upload images and videos and provide front-end integration.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Media\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Modh Adil"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Media\\MediaServiceProvider"
+            ],
+            "aliases": {
+                "Media": "Media\\Facades\\Media"
+            }
+        }
+    }
+}
