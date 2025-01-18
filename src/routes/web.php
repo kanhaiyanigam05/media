@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Carbon;
 use Media\Http\Controllers\MediaController;
 use Illuminate\Support\Facades\Route;
 
@@ -8,7 +10,7 @@ Route::post('media-item', [MediaController::class, 'mediaItem'])->name('media.it
 Route::resource('media', MediaController::class);
 
 
-Route::post('media-item', function (HttpRequest $request) {
+Route::post('media-item', function (Request $request) {
     $media = (object) $request->input('media');
     if (isset($media->created_at)) {
         $media->created_at = Carbon::parse($media->created_at);
