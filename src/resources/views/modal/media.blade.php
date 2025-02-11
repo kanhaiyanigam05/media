@@ -118,7 +118,7 @@
                                     </tr>
                                 </thead>
                                 <tbody id="uploaded-files">
-                                    @foreach (\Media\Uploader\Models\Media::all() as $media)
+                                    @foreach (\Media\Models\Media::all() as $media)
                                     <x-media-item :media="$media" />
                                     @endforeach
                                 </tbody>
