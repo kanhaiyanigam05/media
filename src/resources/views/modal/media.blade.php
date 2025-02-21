@@ -13,7 +13,8 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a class="dropdown-item staticBackdropOpen" href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#uploadImage"><i class="fa-solid fa-upload"></i>
+                                        <a class="dropdown-item staticBackdropOpen" href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#uploadImage"><i
+                                                class="fa-solid fa-upload"></i>
                                             Upload from local</a>
                                     </li>
                                     <li>
@@ -119,7 +120,7 @@
                                 </thead>
                                 <tbody id="uploaded-files">
                                     @foreach (\Media\Models\Media::all() as $media)
-                                    <x-media-item :media="$media" />
+                                        <x-media-item :media="$media" />
                                     @endforeach
                                 </tbody>
                             </table>
@@ -201,7 +202,7 @@
 </div>
 
 <!-- file-upload modal -->
-<div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="uploadImage" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
@@ -230,7 +231,7 @@
 </div>
 <!-- file-upload modal -->
 <!-- file-upload from url modal -->
-<div class="modal fade" id="staticBackdrop1" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop1" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
         <form id="upload-files" action="{{ route('media.upload.url') }}" method="POST" class="modal-content">
             <div class="loading-spinner"></div>
@@ -261,7 +262,7 @@
 </div>
 <!-- file-upload from url modal -->
 <!-- create-folder modal -->
-<div class="modal fade" id="staticBackdrop2" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+<div class="modal fade" id="staticBackdrop2" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-scrollable">
         <div class="modal-content">
             <div class="modal-header">
