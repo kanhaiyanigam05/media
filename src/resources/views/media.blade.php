@@ -4,7 +4,7 @@
         <section class="section">
             <div class="container">
                 <div class="row justify-content-center align-items-center">
-                    <div class="py-5 col-lg-10">
+                    <div class="py-5 col-lg-12">
                         <div class="file-uploader-sec">
                             <div class="flex-wrap upper-header-section d-flex justify-content-between flex-sm-nowrap">
                                 <div class="flex-wrap gap-2 px-2 py-2 d-flex flex-sm-nowrap">
@@ -15,7 +15,7 @@
                                         </button>
                                         <ul class="dropdown-menu">
                                             <li>
-                                                <a class="dropdown-item staticBackdropOpen" href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                                <a class="dropdown-item staticBackdropOpen" href="javascript:void(0)" type="button" data-bs-toggle="modal" data-bs-target="#uploadImage">
                                                     <i class="fa-solid fa-upload"></i>Upload from local
                                                 </a>
                                             </li>
@@ -205,7 +205,7 @@
     </main>
 
     <!-- file-upload modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal fade" id="uploadImage" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
