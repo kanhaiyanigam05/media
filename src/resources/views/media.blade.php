@@ -1,19 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://rawgit.com/enyo/dropzone/master/dist/dropzone.css" />
-    <link rel="stylesheet" href="https://cdn3.devexpress.com/jslib/23.1.3/css/dx.light.css" />
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}" />
-</head>
-
-<body>
+@extends('layout.admin')
+@section('admin')
     <main class="main" id="main">
         <section class="section">
             <div class="container">
@@ -137,7 +123,7 @@
                                         </thead>
                                         <tbody id="uploaded-files">
                                             @foreach (\Media\Models\Media::all() as $media)
-                                            <x-media-item :media="$media" />
+                                                <x-media-item :media="$media" />
                                             @endforeach
                                         </tbody>
                                     </table>
@@ -217,6 +203,7 @@
             </div>
         </section>
     </main>
+
     <!-- file-upload modal -->
     <div class="modal fade" id="staticBackdrop" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
@@ -296,7 +283,7 @@
         </div>
     </div>
     <!-- create-folder modal -->
+@endsection
+@push('js')
     @include('modal.js')
-</body>
-
-</html>
+@endpush
