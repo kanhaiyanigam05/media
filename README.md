@@ -1,4 +1,4 @@
-# 📁 Image Uploader for Laravel
+# 📁 Media Uploader for Laravel
 
 **Image Uploader** is a flexible Laravel package designed to simplify image uploading and management within your project. It supports both single and multiple image uploads and includes a built-in **media gallery Blade component** that allows users to browse and select previously uploaded media assets.
 
